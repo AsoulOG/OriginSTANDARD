@@ -1,0 +1,20 @@
+# Verification Guide — OriginSTANDARD Reference Verifier
+
+This guide explains how anyone can verify an OriginSTANDARD artifact.
+
+---
+
+## Quick Verification (Web)
+1. Visit **https://verify.originstandard.com**
+2. Drop your `.json` or `.zip` proof file.
+3. The verifier runs locally in your browser (no uploads).
+4. See result: ✅ PASS | ❌ FAIL | ⚠️ INVALID
+
+---
+
+## Offline Verification (CLI)
+```bash
+./qs-verify \
+  --manifest manifest.json \
+  --sig signature.json \
+  --config sentinel_config.strict.json
