@@ -234,5 +234,7 @@ Engine and Verifier specifications.
 All rights reserved © 2026 Origin Standard LLC.
 
 **Origin Standard LLC**
+
 ⸻
+
 Latest Integrity Proof: /docs/OriginSTANDARDf_v1.3.4r5_Integrity_Proof.md
