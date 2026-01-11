@@ -1,4 +1,4 @@
----
+ ---
 
 ## Output Rules
 | Code | Meaning  |
