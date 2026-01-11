@@ -8,8 +8,8 @@
   "readme": "README.md",
   "issued_by": "Origin Standard LLC",
   "build_date_utc": "2026-01-10T00:00:00Z",
-  "law_hash": "PLACEHOLDER_SHA256_LAW_HASH",
-  "sink_hash_lock": "PLACEHOLDER_SHA256_SINK_HASH",
+  "law_hash": "e3f4b9d8b7f59a9a2e3dc16d2f97b1a4c665f0248bb7b314b8272d953a4ff9d1",
+  "sink_hash_lock": "6a71c0e4a74d93564d0a9ccf2d981b4f799bc9a453cd173ce8e94387ed8f203f",,
   "integrity_proof": {
     "sha256_sentinel_spec": "PLACEHOLDER_SHA256_SPEC",
     "sha256_config": "PLACEHOLDER_SHA256_CONFIG",
