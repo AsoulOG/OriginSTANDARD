@@ -1,0 +1,18 @@
+# QuadSentinel Engine Specification — v1.3.4r4
+
+**Status:** Frozen  
+**Lock Level:** Immutable  
+**Authority:** Origin Standard LLC  
+
+---
+
+## Core Invariants
+- JSON canonicalization: RFC8785 JCS (UTF-8, NFC, sorted keys)
+- Merkle v2 hash tree (RFC6962-style promotion)
+- Ed25519 + ML-DSA hybrid signature scheme
+- Deterministic, offline verification only
+- No temporal authority without TAO (Time Attestation Object)
+
+---
+
+## Verification Logic
