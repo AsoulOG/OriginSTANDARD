@@ -1,0 +1,26 @@
+{
+  "manifest_version": "1.0",
+  "verifier_name": "OriginSTANDARD Reference Verifier",
+  "engine_spec_version": "v1.3.4r5",
+  "config": "sentinel_config.strict.json",
+  "pinned_pubkey": "pinned_pubkey.hex",
+  "license": "License.md",
+  "readme": "README.md",
+  "issued_by": "Origin Standard LLC",
+  "build_date_utc": "2026-01-10T00:00:00Z",
+  "law_hash": "PLACEHOLDER_SHA256_LAW_HASH",
+  "sink_hash_lock": "PLACEHOLDER_SHA256_SINK_HASH",
+  "integrity_proof": {
+    "sha256_sentinel_spec": "PLACEHOLDER_SHA256_SPEC",
+    "sha256_config": "PLACEHOLDER_SHA256_CONFIG",
+    "sha256_license": "PLACEHOLDER_SHA256_LICENSE"
+  },
+  "signature_policy": {
+    "freeze_policy": "hybrid",
+    "require_pinned_key": true,
+    "deterministic_mode": true,
+    "fail_on_unknown_fields": true
+  },
+  "output_contract": ["PASS", "FAIL", "INVALID"],
+  "copyright": "© 2026 Origin Standard LLC. All rights reserved."
+}
