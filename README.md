@@ -211,5 +211,20 @@ If a change alters meaning, it will be rejected.
 
 Commercial licensing, issuance access, and engine integration:
 
+---
+
+## 🧾 Patent & Legal Notice
+
+This project and all related works are protected under **U.S. Patent Pending** status.
+
+Filed by **Angelo F. Quintos (Inventor)** and assigned to **Origin Standard LLC** under
+the OriginSTANDARD License (OSL-1.0).
+
+These filings cover invariant verification, sealed authenticity frameworks,
+and deterministic proof validation architectures as described in the OriginSTANDARD
+Engine and Verifier specifications.
+
+All rights reserved © 2026 Origin Standard LLC.
+
 **Origin Standard LLC**
 ⸻
