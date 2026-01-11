@@ -193,6 +193,13 @@ See `LICENSE` for full terms.
 
 ---
 
+### 🔐 Integrity Proof
+**Release:** OriginSTANDARD_Verifier_v1.3.4r5.zip  
+**SHA-256:** `7bf61a7a4e63d356a476f8d91a841c38158b34f42cce0e4d76a0a81c0b7732e5`  
+**UTC Timestamp:** 2026-01-10T23:58:00Z  
+**Verifier Manifest:** v1.0 — Immutable Verification Anchor (Origin Standard LLC)
+---
+
 ## Contributions
 
 This repository is **spec-locked**.
