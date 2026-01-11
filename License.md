@@ -34,6 +34,32 @@ exclusively with Origin Standard LLC.
 This license grants no ownership, transfer of rights, or implied authority
 beyond the permissions explicitly stated herein.
 
+---
+
+---
+
+2.1 Patent Status and Assignment Declaration
+
+The OriginSTANDARD Engine, Verifier, and associated invariant verification
+frameworks are protected under **U.S. Patent Pending** status.
+
+Filed by **Angelo F. Quintos (Inventor)** with intent to assign all patent
+rights and interests to **Origin Standard LLC** upon filing of the
+corresponding non-provisional applications, or earlier if deemed necessary
+for protection, enforcement, or licensing.
+
+These filings cover:
+- invariant verification and human-witnessed authenticity systems,
+- sealed, non-retroactive verification protocols,
+- and deterministic, trustless proof validation frameworks.
+
+All rights are reserved under 35 U.S.C. §111(b) provisional protections and
+international equivalents.
+
+This declaration affirms that priority is established and patent filings are
+pending under lawful custody of the inventor, to be transferred in full to
+Origin Standard LLC at the appropriate procedural stage..
+
 ------------------------------------------------------------
 
 3. Permitted Use
