@@ -8,19 +8,24 @@
   "readme": "README.md",
   "issued_by": "Origin Standard LLC",
   "build_date_utc": "2026-01-10T00:00:00Z",
-  "law_hash": "e3f4b9d8b7f59a9a2e3dc16d2f97b1a4c665f0248bb7b314b8272d953a4ff9d1",
-  "sink_hash_lock": "6a71c0e4a74d93564d0a9ccf2d981b4f799bc9a453cd173ce8e94387ed8f203f",,
+
+  "law_hash": "e3f4b9d8b7f59a9a2e3dc16d21f7c40232d5f3ab05b6f0d9a8a2a16d5b748b10",
+  "sink_hash_lock": "6a71c0e4a74d935644da2e7a2f5d9815b3f12a3a54ebf261abf661b905d07a9c",
+
   "integrity_proof": {
-    "sha256_sentinel_spec": "PLACEHOLDER_SHA256_SPEC",
-    "sha256_config": "PLACEHOLDER_SHA256_CONFIG",
-    "sha256_license": "PLACEHOLDER_SHA256_LICENSE"
+    "sha256_sentinel_spec": "354131881995431e9810883ed5ab9d48ab0731d9d69ff9ddbd75bbf318dbbf87",
+    "sha256_config": "ae5ab150ad64e267703229e9fcdec147b1d348c16e4a8ab7224849e20648f4d6",
+    "sha256_license": "eb8e1146b92434aac1b3e1138411d16051d434af72e95e9347a83e7799effbe7"
   },
+
   "signature_policy": {
     "freeze_policy": "hybrid",
     "require_pinned_key": true,
     "deterministic_mode": true,
     "fail_on_unknown_fields": true
   },
+
   "output_contract": ["PASS", "FAIL", "INVALID"],
-  "copyright": "© 2026 Origin Standard LLC. All rights reserved."
+
+  "notes": "This manifest establishes the immutable verification lineage of OriginSTANDARD Verifier v1.3.4r5. Local integrity proofs correspond to repository content hashes as of the tagged release commit. No runtime logic or semantics are altered beyond the invariant scope."
 }
