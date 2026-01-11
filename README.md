@@ -237,4 +237,4 @@ All rights reserved © 2026 Origin Standard LLC.
 
 ⸻
 
-Latest Integrity Proof: /docs/OriginSTANDARDf_v1.3.4r5_Integrity_Proof.md
+**Latest Integrity Proof:** [OriginSTANDARD_v1.3.4r5_Integrity_Proof.md](https://github.com/OriginSTANDARD/OriginSTANDARD/blob/main/docs/OriginSTANDARD_v1.3.4r5_Integrity_Proof.md)
