@@ -28,7 +28,7 @@ All downstream verification must reference this exact hash and timestamp.
 
 ### 🧾 Statement
 This submission record is provided solely for **traceability and institutional verification**
-to GSIB auditors and custodial review entities.
+to GSIB auditors and custodial review entities. no
 
 It carries no executable or signing authority and introduces no
 changes to the immutable verifier manifest.
@@ -37,3 +37,7 @@ changes to the immutable verifier manifest.
 
 **Origin Standard LLC**  
 Immutable Verification Charter — January 2026
+
+---
+🕊️ Origin Standard LLC — Immutable Verification Anchor  
+© 2026 — All rights reserved under the OriginSTANDARD Charter
