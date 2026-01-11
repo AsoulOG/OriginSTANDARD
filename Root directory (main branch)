@@ -1,0 +1,5 @@
+sentinel_spec.md
+VERIFICATION_GUIDE.md
+sentinel_config.strict.json
+pinned_pubkey.hex
+verifier_manifest.json
