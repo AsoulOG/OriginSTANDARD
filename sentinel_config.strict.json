@@ -1,0 +1,12 @@
+---
+
+### ⚙️ 3️⃣ `sentinel_config.strict.json`
+```json
+{
+  "allow_unsigned": false,
+  "qtl_required": true,
+  "pinned_pubkey_hex": "PLACEHOLDER_HEX_KEY",
+  "deterministic_mode": true,
+  "freeze_policy": "hybrid",
+  "fail_on_unknown_fields": true
+}
