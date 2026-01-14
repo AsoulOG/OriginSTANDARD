@@ -17,7 +17,7 @@ Average Loss Amount
 
 Calculation
 
-Total Loss Cost = Volume × Loss Incidence Rate × Average Loss Amount
+Standard Fee = 20% × Total Realized Loss (most recent full year)
 
 Standard Fee = 0.20 × Total Loss Cost  
 Fee Payable = min(Standard Fee, USD 300B)
