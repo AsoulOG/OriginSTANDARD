@@ -1,0 +1,41 @@
+## Fraud Elimination Fee Schedule
+
+Normative Standard
+
+Joinder Fee = 20% of Total Fraud Cost  
+Maximum Joinder Fee Cap = USD 300,000,000,000
+
+Payment of the Joinder Fee constitutes joinder.  
+The Joinder Fee is final and non-refundable.
+
+Total Fraud Cost is determined using externally observable data applicable to the covered surface.
+
+Covered Transaction Volume  
+Fraud Incidence Rate  
+Average Loss per Incident
+
+
+Calculation
+
+Total Fraud Cost = Volume × Incidence Rate × Average Loss
+
+Joinder Fee = 0.20 × Total Fraud Cost  
+Fee Payable = min(Joinder Fee, USD 300B)
+
+
+Internal reporting, recoveries, insurance, or reclassification do not alter the calculation.
+
+Engine use is optional and may occur only in accordance with the frozen specification.  
+Royalties accrue only during active execution.  
+Suspension of use stops royalty accrual and does not revoke joinder.
+
+All artifacts stamped during execution remain valid and verifiable indefinitely.  
+Verification is unaffected by execution state.  
+Artifacts produced without execution have no verification state.
+
+Joined entities may stamp and verify.  
+Non-joined entities may verify only.
+
+No tiers.  
+No exceptions.  
+No negotiated variance.
