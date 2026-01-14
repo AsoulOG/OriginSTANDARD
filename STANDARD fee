@@ -1,32 +1,37 @@
-## Fraud Elimination Fee Schedule
+## STANDARD Fee Schedule
 
 Normative Standard
 
-Joinder Fee = 20% of Total Fraud Cost  
+Joinder Fee = 20% of Total loss Cost  
 Maximum Joinder Fee Cap = USD 300,000,000,000
 
 Payment of the Joinder Fee constitutes joinder.  
 The Joinder Fee is final and non-refundable.
 
-Total Fraud Cost is determined using externally observable data applicable to the covered surface.
+Total Loss Cost is determined using externally observable data applicable to the covered surface.
 
 Covered Transaction Volume  
-Fraud Incidence Rate  
-Average Loss per Incident
+Loss Incidence Rate  
+Average Loss Amount
 
 
 Calculation
 
-Total Fraud Cost = Volume × Incidence Rate × Average Loss
+Total Loss Cost = Volume × Loss Incidence Rate × Average Loss Amount
 
-Joinder Fee = 0.20 × Total Fraud Cost  
-Fee Payable = min(Joinder Fee, USD 300B)
+Standard Fee = 0.20 × Total Loss Cost  
+Fee Payable = min(Standard Fee, USD 300B)
 
+Royalty
 
-Internal reporting, recoveries, insurance, or reclassification do not alter the calculation.
+A continuing royalty of 15% applies to all active engine execution value.
+
+The royalty rate is fixed at 15% and does not change.
+
+Royalties accrue only during active execution.  
+No execution, no royalty.
 
 Engine use is optional and may occur only in accordance with the frozen specification.  
-Royalties accrue only during active execution.  
 Suspension of use stops royalty accrual and does not revoke joinder.
 
 All artifacts stamped during execution remain valid and verifiable indefinitely.  
