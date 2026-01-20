@@ -10,7 +10,7 @@ These instructions are **for payment only** — they do **not** provide access t
 **Name:** Origin Standard LLC  
 **Account Number:** 166088523399342  
 **Account Type:** Checking  
-**Address:** 372 Southwest Mount Mazama Street  
+**Address:** redacted-home office 
 McMinnville, OR 97128 *(Registered Business Address)*
 
 ---
