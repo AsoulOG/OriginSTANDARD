@@ -38,7 +38,7 @@ SWIFT/BIC: CHASUS33XXX *(JPMorgan Chase)*
 
 **Beneficiary Name:** Origin Standard LLC  
 **Account Number (IBAN):** 166088523399342  
-**Address:** 372 Southwest Mount Mazama Street  
+**Address:** redacted Home office  
 McMinnville, OR 97128  
 USA
 
