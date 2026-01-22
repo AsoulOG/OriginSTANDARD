@@ -4,58 +4,57 @@
   "engine_spec_version": "v1.3.4r5",
   "engine_series": "QuadSentinel",
   "title": "OriginSTANDARD Reference Verifier Capsule",
-  "description": "Immutable reference verifier and manifest capsule for Origin Standard LLC — under QuadSentinel Engine Spec v1.3.4r5.",
+  "description": "Immutable reference verifier and manifest capsule for Origin Standard LLC",
   "frozen": true,
 
-  "law_hash": "354131881995431e9810883ed5ab9d48ab0731d9d69ff9ddbd75bbf318dbbf87",
-  "config_hash": "ae5ab150ad64e267703229e9fcdec147b1d348c16e4a8ab7224849e20648f4d6",
-  "license_hash": "eb8e1146b92434aac1b3e1138411d16051d434af72e95e9347a83e7799effbe7",
+  "artifacts": {
+    "law_hash": "85446E20BD0D760776B1D8F02B70446ADED7157E2E80837FBD66F8FD5A502C9A",
+    "config_hash": "1F2C59F01F3FED42C502E203EA948B32008CB92829CB1C320784CB0C724A320B",
+    "license_hash": "A2D139C5B6FBDB70A98A895AE8A408AB64710E986B9880DAAB59AFF3F185B969"
+  },
 
-  "timestamp_utc": "2026-01-10T23:58:00Z",
+  "artifact_paths": {
+    "law": "LawHash verify spec",
+    "config": "sentinel_config.strict.json",
+    "license": "License.md",
+    "manifest": "verifier_manifest.json"
+  },
+
   "attestation_policy": {
     "type": "TAO",
-    "binding": "law_hash",
+    "binding": "artifacts.law_hash",
     "semantics": "time-external, canonicalized"
   },
 
   "verification_invariants": {
     "json_canonicalization": "RFC8785 (NFC strings, sorted keys, UTF-8, no floats)",
-    "merkle_tree": "v2 — RFC6962 promotion, SHA-256 preimage separation (0x00 leaf / 0x01 node)",
+    "merkle_tree": "v2 - RFC6962 promotion, SHA-256 preimage separation",
     "signature_scheme": ["Ed25519", "ML-DSA (hybrid)"],
     "engine_boundary": "non-interpretable; deterministic outputs only (PASS/FAIL/INVALID)",
     "output_contract": "verbatim 3-code discipline"
-  },
-
-  "config_policies": {
-    "freeze_policy": "hybrid",
-    "fail_on_unknown_fields": true,
-    "deterministic_mode": true,
-    "qtl_proof_required": true,
-    "pinned_pubkey_required": true
-  },
-
-  "build": {
-    "artifact_name": "qs_verifier_hardened_v1.3.4r4.zip",
-    "compiler": "Go 1.21.x",
-    "platforms": ["linux/amd64", "darwin/arm64", "windows/amd64"],
-    "sha256": "auto-derived",
-    "build_type": "pure/hardened"
   },
 
   "governance": {
     "ownership": "Origin Standard LLC",
     "license": "OriginSTANDARD License (OSL-1.0)",
     "patent_status": "Filed and Pending Assignment to Origin Standard LLC (2026)",
-    "jurisdiction": "Delaware, USA — Arbitration Venue: New York, NY",
+    "jurisdiction": "Delaware, USA - Arbitration venue: New York, NY",
     "non_retroactivity": true,
     "immutability": true
   },
 
   "footer": {
-    "issued_by": "Origin Standard LLC — Immutable Verification Anchor",
+    "issued_by": "Origin Standard LLC - Immutable Verification Anchor",
     "engine_spec": "v1.3.4r5",
     "utc_timestamp": "2026-01-10T23:58:00Z",
-    "law_hash": "354131881995431e9810883ed5ab9d48ab0731d9d69ff9ddbd75bbf318dbbf87",
-    "note": "Timestamp is external (non-semantic); all proofs remain time-free per TAO binding."
+    "binds_to": "artifacts.law_hash",
+    "note": "Timestamp is external and non-semantic; all proofs remain time-independent"
+  },
+
+  "anchor": {
+    "repo": "https://github.com/AsoulOG/OriginSTANDARD",
+    "git_commit": "f224bf04467df1c43bee2ac2de98f6dc8d3c0f41",
+    "git_tree": "dc32f24c3199f77d4dbd857eb808efec10accc02a6",
+    "semantics": "Git commit and tree hash anchor this manifest and all referenced artifacts"
   }
 }
