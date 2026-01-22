@@ -1,60 +1,67 @@
 {
   "manifest_version": "1.0",
   "issuer": "Origin Standard LLC",
-  "engine_spec_version": "v1.3.4r5",
   "engine_series": "QuadSentinel",
+  "engine_spec_version": "v1.3.4r5",
   "title": "OriginSTANDARD Reference Verifier Capsule",
-  "description": "Immutable reference verifier and manifest capsule for Origin Standard LLC",
+  "description": "Frozen reference verifier capsule: immutable anchors, paths, and invariants.",
   "frozen": true,
 
   "artifacts": {
-    "law_hash": "85446E20BD0D760776B1D8F02B70446ADED7157E2E80837FBD66F8FD5A502C9A",
-    "config_hash": "1F2C59F01F3FED42C502E203EA948B32008CB92829CB1C320784CB0C724A320B",
-    "license_hash": "A2D139C5B6FBDB70A98A895AE8A408AB64710E986B9880DAAB59AFF3F185B969"
+    "law_hash": "85446e20bd0d760776b1d8f02b70446aded7157e2e80837fbd66f8fd5a502c9a",
+    "config_hash": "1f2c59f01f3fed42c502e203ea948b32008cb92829cb1c320784cb0c724a320b",
+    "license_hash": "a2d139c5b6fbdb70a98a895ae8a408ab64710e986b9880daab59aff3f185b969",
+    "manifest_hash": "REPLACE_WITH_SHA256_OF_THIS_FILE_AFTER_FINAL_SAVE"
   },
 
   "artifact_paths": {
-    "law": "LawHash verify spec",
-    "config": "sentinel_config.strict.json",
-    "license": "License.md",
+    "law": "spec/quad_law_hash.txt",
+    "engine_spec": "spec/OS-QuadSentinel_Engine_Spec_v1.3.4r5.pdf",
+    "config": "config/sentinel_config.strict.json",
+    "license": "legal/OriginSTANDARD_License_OSL-1.0.md",
     "manifest": "verifier_manifest.json"
   },
 
   "attestation_policy": {
     "type": "TAO",
     "binding": "artifacts.law_hash",
-    "semantics": "time-external, canonicalized"
+    "rule": "time-external; TAO is the sole temporal authority",
+    "tao_expected_path": "tao/tao_latest.json",
+    "tao_required": true
   },
 
   "verification_invariants": {
-    "json_canonicalization": "RFC8785 (NFC strings, sorted keys, UTF-8, no floats)",
-    "merkle_tree": "v2 - RFC6962 promotion, SHA-256 preimage separation",
-    "signature_scheme": ["Ed25519", "ML-DSA (hybrid)"],
-    "engine_boundary": "non-interpretable; deterministic outputs only (PASS/FAIL/INVALID)",
-    "output_contract": "verbatim 3-code discipline"
+    "json_canonicalization": "RFC8785 JCS; NFC strings; sorted keys; UTF-8; finite numbers only; no NaN/Inf",
+    "merkle_tree": "Merkle v2; SHA-256; leaf prefix 0x00; node prefix 0x01; RFC6962 promotion",
+    "signature_policy": "strict",
+    "signature_scheme": [
+      "ed25519",
+      "ml-dsa-65"
+    ],
+    "engine_boundary": "non-interpretable; deterministic outputs only",
+    "output_contract": "PASS|FAIL|INVALID only"
   },
 
   "governance": {
     "ownership": "Origin Standard LLC",
     "license": "OriginSTANDARD License (OSL-1.0)",
-    "patent_status": "Filed and Pending Assignment to Origin Standard LLC (2026)",
-    "jurisdiction": "Delaware, USA - Arbitration venue: New York, NY",
+    "patent_status": "Filed and pending assignment to Origin Standard LLC (2026)",
+    "jurisdiction": "Delaware, USA",
+    "arbitration_venue": "New York, NY",
     "non_retroactivity": true,
-    "immutability": true
+    "immutability": true,
+    "interpretation": "none; conformance only"
   },
 
   "footer": {
-    "issued_by": "Origin Standard LLC - Immutable Verification Anchor",
-    "engine_spec": "v1.3.4r5",
-    "utc_timestamp": "2026-01-10T23:58:00Z",
-    "binds_to": "artifacts.law_hash",
-    "note": "Timestamp is external and non-semantic; all proofs remain time-independent"
+    "issued_by": "Origin Standard LLC",
+    "note": "This manifest contains no temporal authority. Time, if needed, is proven only by a valid TAO bound to artifacts.law_hash."
   },
 
   "anchor": {
     "repo": "https://github.com/AsoulOG/OriginSTANDARD",
     "git_commit": "f224bf04467df1c43bee2ac2de98f6dc8d3c0f41",
     "git_tree": "dc32f24c3199f77d4dbd857eb808efec10accc02a6",
-    "semantics": "Git commit and tree hash anchor this manifest and all referenced artifacts"
+    "semantics": "Git commit and tree anchor this manifest and referenced artifacts. Any modification constitutes a fork."
   }
 }
