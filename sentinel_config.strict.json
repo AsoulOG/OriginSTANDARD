@@ -5,7 +5,7 @@
 {
   "allow_unsigned": false,
   "qtl_required": true,
-  "pinned_pubkey_hex": "PLACEHOLDER_HEX_KEY",
+  "pinned_pubkey_hex": "c1b4f28a3a0c64b8d9129d0f8a33fa9e7a05f24a2d5b74c5ef83fbbcb73e214f",
   "deterministic_mode": true,
   "freeze_policy": "hybrid",
   "fail_on_unknown_fields": true
