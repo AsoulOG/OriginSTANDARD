@@ -1,5 +1,5 @@
 {
-  "manifest_version": "1.0",
+  "manifest_version": "1.1",
   "issuer": "Origin Standard LLC",
   "engine_spec_version": "v1.3.4r5",
   "engine_series": "QuadSentinel",
@@ -8,53 +8,89 @@
   "frozen": true,
 
   "artifacts": {
-    "law_hash": "85446E20BD0D760776B1D8F02B70446ADED7157E2E80837FBD66F8FD5A502C9A",
-    "config_hash": "1F2C59F01F3FED42C502E203EA948B32008CB92829CB1C320784CB0C724A320B",
-    "license_hash": "A2D139C5B6FBDB70A98A895AE8A408AB64710E986B9880DAAB59AFF3F185B969"
-  },
+    "law": {
+      "repo": "https://github.com/AsoulOG/Quad-Law",
+      "path": "verifyspc.txt",
+      "commit": "bda535758b2607eee10a3d76acf46eb3e882904c",
+      "encoding": "raw-bytes",
+      "sha256": "a0989f68cbea2d2983224bf6b5908159c7ff3bbac2eb9ca1015cfd9a074ff521",
+      "sha512": "1db1c22be608afc8db8026acb609cd3d6cef9ec9397f43d74da305e62cd943ea44da451cf4a3ec4a9304a5e89687e06a6707c0bb9b00ef0bd106574d31c7a0c1"
+    },
 
-  "artifact_paths": {
-    "law": "LawHash verify spec",
-    "config": "sentinel_config.strict.json",
-    "license": "License.md",
-    "manifest": "verifier_manifest.json"
+    "config": {
+      "path": "sentinel_config.strict.json",
+      "sha256": "1F2C59F01F3FED42C502E203EA948B32008CB92829CB1C320784CB0C724A320B"
+    },
+
+    "license": {
+      "path": "License.md",
+      "sha256": "A2D139C5B6FBDB70A98A895AE8A408AB64710E986B9880DAAB59AFF3F185B969"
+    }
   },
 
   "attestation_policy": {
     "type": "TAO",
-    "binding": "artifacts.law_hash",
-    "semantics": "time-external, canonicalized"
+    "binding": "artifacts.law.sha256",
+    "semantics": "time-external, canonicalized, non-authoritative"
   },
 
   "verification_invariants": {
-    "json_canonicalization": "RFC8785 (NFC strings, sorted keys, UTF-8, no floats)",
-    "merkle_tree": "v2 - RFC6962 promotion, SHA-256 preimage separation",
-    "signature_scheme": ["Ed25519", "ML-DSA (hybrid)"],
-    "engine_boundary": "non-interpretable; deterministic outputs only (PASS/FAIL/INVALID)",
-    "output_contract": "verbatim 3-code discipline"
+    "json_canonicalization": {
+      "standard": "RFC8785",
+      "encoding": "UTF-8",
+      "normalization": "NFC",
+      "key_order": "lexicographic",
+      "numbers": "disallowed"
+    },
+
+    "merkle_tree": {
+      "version": 2,
+      "hash": "SHA-256",
+      "preimage_separation": true,
+      "odd_leaf_policy": "RFC6962 promotion"
+    },
+
+    "hash_policy": {
+      "operational_hash": "SHA-256",
+      "integrity_anchor_hash": "SHA-512",
+      "dual_hash_required_for_law": true
+    },
+
+    "signature_scheme": {
+      "primary": "Ed25519",
+      "post_quantum": "ML-DSA-65",
+      "hybrid_required": true,
+      "downgrade_allowed": false
+    },
+
+    "engine_boundary": "non-interpretable; deterministic outputs only",
+    "output_contract": "PASS | FAIL | INVALID only",
+    "comparison_policy": "constant-time equality"
   },
 
   "governance": {
     "ownership": "Origin Standard LLC",
     "license": "OriginSTANDARD License (OSL-1.0)",
-    "patent_status": "Filed and Pending Assignment to Origin Standard LLC (2026)",
-    "jurisdiction": "Delaware, USA - Arbitration venue: New York, NY",
+    "patent_status": "Filed and Pending Assignment (2026)",
+    "jurisdiction": "Delaware, USA",
+    "arbitration_venue": "New York, NY",
     "non_retroactivity": true,
-    "immutability": true
-  },
-
-  "footer": {
-    "issued_by": "Origin Standard LLC - Immutable Verification Anchor",
-    "engine_spec": "v1.3.4r5",
-    "utc_timestamp": "2026-01-10T23:58:00Z",
-    "binds_to": "artifacts.law_hash",
-    "note": "Timestamp is external and non-semantic; all proofs remain time-independent"
+    "immutability": true,
+    "spec_update_policy": "No updates. Only forks."
   },
 
   "anchor": {
     "repo": "https://github.com/AsoulOG/OriginSTANDARD",
     "git_commit": "f224bf04467df1c43bee2ac2de98f6dc8d3c0f41",
     "git_tree": "dc32f24c3199f77d4dbd857eb808efec10accc02a6",
-    "semantics": "Git commit and tree hash anchor this manifest and all referenced artifacts"
+    "semantic_binding": "This manifest binds to the exact Git tree state above"
+  },
+
+  "footer": {
+    "issued_by": "Origin Standard LLC — Immutable Verification Anchor",
+    "engine_spec": "v1.3.4r5",
+    "utc_timestamp": "2026-01-10T23:58:00Z",
+    "law_binding": "artifacts.law.sha256",
+    "note": "Timestamp is informational; verification remains time-independent"
   }
 }
