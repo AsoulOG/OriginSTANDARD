@@ -9,12 +9,12 @@
 
   "artifacts": {
     "law": {
-      "repo": "https://github.com/AsoulOG/Quad-Law",
-      "path": "verifyspc.txt",
-      "commit": "bda535758b2607eee10a3d76acf46eb3e882904c",
-      "encoding": "raw-bytes",
-      "sha256": "a0989f68cbea2d2983224bf6b5908159c7ff3bbac2eb9ca1015cfd9a074ff521",
-      "sha512": "1db1c22be608afc8db8026acb609cd3d6cef9ec9397f43d74da305e62cd943ea44da451cf4a3ec4a9304a5e89687e06a6707c0bb9b00ef0bd106574d31c7a0c1"
+  "repo": "https://github.com/AsoulOG/Quad-Law",
+  "path": "verifyspc.txt",
+  "commit": "<current HEAD commit hash>",
+  "encoding": "raw-bytes",
+  "sha256": "1ae67f2fdbe9666675867f6d5f1c74ebe333792d6d00263e94f15952bcdf6e28",
+  "sha512": "88f75f8ae46263e83171ea85c041a47008226fb4cca1b1504b2fe71070fccb5540149437ddc97868b2db34a24266de13ed907d8e51fd8ae72dac34e769e2d70e"
     },
 
     "config": {
