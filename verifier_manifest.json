@@ -11,10 +11,10 @@
     "law": {
   "repo": "https://github.com/AsoulOG/Quad-Law",
   "path": "verifyspc.txt",
-  "commit": "fef1134903a5afdbf019de46b4b07a0b8f481ed8",
+  "commit": "f61e391d316b4e128c969ff8bc41c131c276660a",
   "encoding": "raw-bytes",
-  "sha256": "1ae67f2fdbe9666675867f6d5f1c74ebe333792d6d00263e94f15952bcdf6e28",
-  "sha512": "88f75f8ae46263e83171ea85c041a47008226fb4cca1b1504b2fe71070fccb5540149437ddc97868b2db34a24266de13ed907d8e51fd8ae72dac34e769e2d70e"
+  "sha256": "ad3fafb75b31f20d6a8e88198604908458c7a7a47a4e83fd54e31bb5717a57f6",
+  "sha512": "288e59b232e231e95f549c39e712df4c148898c9701f10dcedb23c0fdbabafad068e4bac3caf1199485454791837894ea9d8f436ebd6def4beeee56bff96058e"
     },
 
     "config": {
