@@ -55,20 +55,19 @@ Revenue Threshold
 Joinder Fee
 Tier 1 — Enterprise
 ≥ $1B
-$1,000,000,000
+$500k month 
 Tier 2 — Mid-Market
 $500M–$999M
-$500,000,000
+$250k month
 Tier 3 — Regional
 $250M–$499M
-$250,000,000
+$100k month
 Tier 4 — Super Small
 < $250M
-$100,000,000
+$25k month
 In addition:
+one time buy-in option then a
 15% ongoing royalty on execution-derived value
-Tier 1–3 entities receive Tier 4 referral rights (25% of Tier 4 Joinder Fee)
-Authority is registry-controlled. Verification is public and permissionless. Issuance is restricted to ACTIVE entities only.
 What This Is Not
 OriginSTANDARD does not claim:
 Fraud elimination guarantees
